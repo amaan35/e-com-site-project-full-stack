@@ -43,7 +43,7 @@ const HomeSectionCarousel = ({data, sectionName}) => {
         {activeIndex < items.length-1 && (
           <Button
             variant="contained"
-            className="z-50"
+            className="z-40"
             onClick={slideNext}
             sx={{
               position: "absolute",
@@ -60,7 +60,7 @@ const HomeSectionCarousel = ({data, sectionName}) => {
         {activeIndex !== 0 && (
           <Button
             variant="contained"
-            className="z-50"
+            className="z-40"
             onClick={slidePrev}
             sx={{
               position: "absolute",
