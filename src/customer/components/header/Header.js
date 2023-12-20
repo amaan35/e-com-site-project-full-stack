@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import '../header/Header.css'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header = () => {
   
@@ -27,14 +28,17 @@ const Header = () => {
         </button>
       </div>
       <div className="w-full flex flex-row items-center justify-end">
+      <button className="font-bold text-lg hover:bg-slate-200 py-2 px-4 rounded-lg">
+          <SearchIcon />
+        </button>
         <button className="font-bold text-lg hover:bg-slate-200 py-2 px-4 rounded-lg">
           Sign in
         </button>
         <button className="font-bold text-lg hover:bg-slate-200 py-2 px-4 rounded-lg">
           Create Account
         </button>
-        <button className="font-bold text-lg hover:bg-slate-200 py-2 px-4 rounded-lg">
-          <SearchIcon />
+        <button className="font-bold text-lg hover:bg-slate-200 py-2 px-4 rounded-lg mr-3">
+          <ShoppingCartIcon/>
         </button>
       </div>
     </div>
