@@ -8,16 +8,22 @@ import Product from "../product/Product";
 
 const Header = () => {
   const navigate = useNavigate();
+  const navigateHome = useNavigate();
 
   const handleCategoryClick = () => {
-    navigate("shoes/men");
+    navigate("/shoes/men");
   };
+
+  const handleLogoClick = () =>{
+    navigateHome("/");
+  }
 
   return (
     <>
       <div className="top-0 bg-white z-50 w-full flex flex-row sticky">
         <div className="w-1/3 flex flex-row items-center justify-between">
-          <img
+          <img 
+            onClick={handleLogoClick}
             src="https://png.pngtree.com/template/20190927/ourmid/pngtree-e-commerce-logo-template-image_311731.jpg"
             className="ml-5 h-24 w-24 cursor-pointer"
           />
